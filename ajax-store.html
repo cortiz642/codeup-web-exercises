@@ -24,6 +24,17 @@
 <script>
 (function() {
     "use strict";
+    // alert("hello world")
+    // $('h1').css("border", "2px solid red");
+
+    $.get("../data/inventory.json")
+    .done(function (res) {
+        console.log(res);
+    })
+    .fail(function (res, status, err) {
+        console.log(err);
+    })
+
     // TODO: Create an AJAX GET request for the file under data/inventory.json
     $.get("../data/inventory.json", {
         limit:  10,
