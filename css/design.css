@@ -1,0 +1,28 @@
+.dot1{
+    height: 100px;
+    width: 100px;
+    background-color: #E6563B;
+    border-radius: 50%;
+
+}
+.dot2{
+    height: 100px;
+    width: 100px;
+   background-color: #eb9d3a;
+    border-radius: 50%;
+}
+.dot3{
+    height: 100px;
+    width: 100px;
+background-color: #7cb06c;
+    border-radius: 50%;
+}
+.dot4{
+    height: 100px;
+    width: 100px;
+   background-color: #00aba9;
+    border-radius: 50%;
+}
+span{
+    align-content: space-around;
+}

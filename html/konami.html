@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konami Code</title>
+</head>
+<body>
+<h1>Konami Code</h1>
+<form>
+    <fieldset>
+        <input id="target" type="text" value="Hello there">
+    </fieldset>
+</form>
+    <div id="other">
+        Trigger the handler
+    </div>
+    <div class="bn" style="background:#98bf21;height:100px;width:100px;
+                    position:absolute;">
+    </div>
+    <script src="../js/jquery-2.2.4.js">
+    </script>
+<!--<script src="../js/jquery_exercise.js"></script>-->
+    <script>
+    "use strict";
+
+    var pattern = "";
+    $(document).keyup(function(event) {
+        pattern += event.keyCode
+        if (pattern === "3838404037393739666513") {
+            $("div").animate({left: '250px'});
+            alert("Awesome!!")
+        }
+    // })
+        console.log(event.keyCode);
+    })
+    // $(document).ready(function(){
+    //     $("button").click(function(){
+    //         $("div").animate({left: '250px'});
+    //     });
+    // });
+    $(document).ready(function(){
+        $(".content-box").click(function(){
+            $(".content")
+        }
+    })
+</script>
+</body>
+</html>

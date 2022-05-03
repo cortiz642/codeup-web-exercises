@@ -1,0 +1,34 @@
+body{
+    background-color: #3B94D9;
+}
+@media screen and (max-width: 339px){
+body{
+    color:blue;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+nav{
+
+}
+
+li{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-block: 5px;
+    padding: 5px;
+    background-color: lightgray;
+
+
+}
+a {
+    display: inline-block;
+    margin: 0 auto;
+}
+.alert-info {
+    color: black;
+}
+}
+

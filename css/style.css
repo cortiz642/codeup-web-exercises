@@ -1,0 +1,37 @@
+.fancy-header{
+    color:purple;
+    font-size:60px;
+    position: center;
+}
+header {
+    float: snap;
+    padding: 5px 0 0 0 ;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../../codeup-web-exercises/images/202599-plain-white-background-design.jpeg");
+}
+body{
+    background-image: url("../../codeup-web-exercises/images/Background-block-image.jpeg");
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+
+}
+
+/*body {*/
+/*    background-blend-mode: color-burn;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+}
+*{box-sizing:border-box}
+/*Slideshow container*/
+.slideshow-container {
+    max-width:1000px;
+    position:relative;
+    margin:auto;
+}
+

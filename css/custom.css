@@ -1,0 +1,17 @@
+h1{
+    height: 15px;
+}
+.custom-control{
+    border-style: solid;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-color: #aaa9a9;
+    border-radius: 2%;
+
+
+}
+.btn{
+    border-style: solid;
+}
