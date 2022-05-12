@@ -492,11 +492,30 @@
 // example input: {a:1,b:2,c:3}
 // expected output: ['a','b','c']
 
-var input: {
-    a:1,
-    b:2,
-    c:3,
+// var input: {
+//     a:1,
+//     b:2,
+//     c:3,
+//
+//     return(input);
+// }
 
-    return(input);
+/////////////       MORNING WARMUP 5/4/2022     ////////////////
+
+// Write a function that takes a number (a) as argument
+// Split a into its individual digits and return them in an array
+// Tip: you might want to change the type of the number for the splitting
+
+// example input: 931
+// expected output: [9,3,1]
+
+// function num(931){
+//
+// }
+
+function countOdds(arrNum){
+    for(let i = 1; i < arrNum.length; i++){
+        return arrNum[i] % 1;
+    }
 }
-
+countOdds(1,2,3,4,5,6)
