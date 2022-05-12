@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/weather_map.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
+    <script src="js/mapbox-geocoder-utils.js"></script>
+
+</head>
+<body>
+
+<!--    NAVBAR  -->
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="../weather-map-project/img/reyes-del-tiempo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            Reyes Del Tiempo
+        </a>
+    </div>
+</nav>
+<!--    SEARCH BAR  -->
+<div class="container">
+    <div class="row">
+        <form class="d-flex">
+            <div class="col-1">
+                <p>Place</p>
+            </div>
+            <div class="col-3">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </div>
+            <div class="col-3">
+                <button id="btn btn-outline-success bg-primary text-white" type="submit">Find</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--    WEATHER CARDS   -->
+<div class="container col flex-wrap">
+    <div class="row">
+        <div class="col-2">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                    Featured
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Description:</li>
+                    <li class="list-group-item">Humidity:</li>
+                    <li class="list-group-item">Wind:</li>
+                    <li class="list-group-item">Pressure:</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                    Featured
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Description:</li>
+                    <li class="list-group-item">Humidity:</li>
+                    <li class="list-group-item">Wind:</li>
+                    <li class="list-group-item">Pressure:</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                    Featured
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Description:</li>
+                    <li class="list-group-item">Humidity:</li>
+                    <li class="list-group-item">Wind:</li>
+                    <li class="list-group-item">Pressure:</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                    Featured
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Description:</li>
+                    <li class="list-group-item">Humidity:</li>
+                    <li class="list-group-item">Wind:</li>
+                    <li class="list-group-item">Pressure:</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                    Featured
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Description:</li>
+                    <li class="list-group-item">Humidity:</li>
+                    <li class="list-group-item">Wind:</li>
+                    <li class="list-group-item">Pressure:</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- api map window here-->
+    <div>
+        <!-- Open Weather JS -->
+
+<!--        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>-->
+
+        <!--    Map -->
+        <div id='map' style='width: 100%; height: 500px;'></div> <!-- Map Size -->
+        <script>
+
+            // TO MAKE THE MAP APPEAR YOU MUST
+            // ADD YOUR ACCESS TOKEN FROM
+            https://account.mapbox.com
+                mapboxgl.accessToken = 'pk.eyJ1IjoiY29ydGl6NjQyIiwiYSI6ImNsMnFsZHZwMzJ3MWEzY2x3dGNmbTdyZnAifQ.sfLQKS4G3W4KCQAOPIIVfA'; //Access Token //
+            const map = new mapboxgl.Map({   //map object //
+                container: 'map',   // container ID
+                style: 'mapbox://styles/mapbox/streets-v11',    // style URL
+                center: [-149.89425988816447, 62.823824950373776], // starting position [lng, lat]
+                zoom: 9 // starting zoom
+            });
+
+            var marker = new mapboxgl.Marker()  //marker for tommy's burgers //
+                .setLngLat([-149.89425988816447, 62.823824950373776]) // lat/long //
+                .addTo(map);
+
+            // var popup = new mapboxgl.Popup()
+            //     .setLngLat([-149.89425988816447, 62.823824950373776])
+            //     .setHTML("<p>Tommy's Burger Stop! The Best Burgers in the World!!</p>")
+            //     .addTo(map)
+
+            var tommysBurgers = new mapboxgl.Popup() // marker popup after clicked on //
+                .setHTML("<p>Tommy's Burger Stop! The Best Burgers in the World!!</p>")
+
+            marker.setPopup(tommysBurgers)
+
+
+
+        </script>
+    </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="/js/jquery-2.2.4.js"></script>
+<script src="js/keys.js"></script>
+</body>
+</html>
