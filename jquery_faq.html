@@ -49,24 +49,24 @@
         <a href="#" id="highlighted">Click to highlight</a>
 
     <h3 id="national-parks-heading">Yosemite</h3>
-        <ul class="bolded">
-            <li>Yosemite is home to one of the tallest waterfalls in the world.</li>
-            <li>Yosemite is the only national park to bid to host the winter Olympics</li>
-            <li>This is one of few places in the U.S. where you can see a rainbow at night.</li>
+        <ul class="bolded-1">
+            <li class="a">Yosemite is home to one of the tallest waterfalls in the world.</li>
+            <li class="b">Yosemite is the only national park to bid to host the winter Olympics</li>
+            <li class="c">This is one of few places in the U.S. where you can see a rainbow at night.</li>
             <li class="yellow">Yosemite is a climber's playground.</li>
         </ul>
     <h3>Yellowstone</h3>
-        <ul>
-            <li>Yellowstone was the world's first national park.</li>
-            <li>It is home to half of the world's geothermal features.</li>
-            <li>Old Faithful geyser was once used as a laundromat</li>
+        <ul class="bolded-2">
+            <li class="d">Yellowstone was the world's first national park.</li>
+            <li class="e">It is home to half of the world's geothermal features.</li>
+            <li class="f">Old Faithful geyser was once used as a laundromat</li>
             <li class="yellow">Yellowstone is a super volcano</li>
         </ul>
     <h3>Glacier National Park</h3>
-        <ul>
-            <li>Glacier straddles the Continental Divide, allowing for extreme weather.</li>
-            <li>Evidence of human use in the area dates back over 12,000 years.</li>
-            <li>The largest glacier in the park is 0.7 square miles.</li>
+        <ul class="bolded-3">
+            <li class="g">Glacier straddles the Continental Divide, allowing for extreme weather.</li>
+            <li class="h">Evidence of human use in the area dates back over 12,000 years.</li>
+            <li class="i">The largest glacier in the park is 0.7 square miles.</li>
             <li class="yellow">Glacier holds over 700 miles of hiking trails.</li>
         </ul>
     <button class="specific">Click to highlight last fact of each list!!</button>
@@ -97,6 +97,12 @@
             $('.bolded').addClass("bold");
         })
     })
+    $('li').click(function(event){
+        event.preventDefault();
+        $('li.a').css( "color", "blue" );
+
+    })
+
     </script>
 </body>
 </html>
