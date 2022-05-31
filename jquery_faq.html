@@ -45,7 +45,16 @@
             <dd class="invisible">Great Smokey Mountains National Park is the most visited
             national park with more than 9 million guests per year.</dd>
     </dl>
-<script src="js/jquery-2.2.4.js">
+        <a href="#" id="highlight-important">Click to toggle the highlighting of important text!</a>
+<script src="js/jquery-2.2.4.js"></script>
+<script>
+    "use strict";
+    $(document).ready(function(){
+        $('#highlight-important').click(function(event){
+            event.preventDefault();
+            $('.invisible').toggleClass("invisible")
+        })
+    })
     </script>
 </body>
 </html>
