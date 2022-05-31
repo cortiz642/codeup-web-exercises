@@ -49,7 +49,7 @@
         <a href="#" id="highlighted">Click to highlight</a>
 
     <h3 id="national-parks-heading">Yosemite</h3>
-        <ul>
+        <ul class="bolded">
             <li>Yosemite is home to one of the tallest waterfalls in the world.</li>
             <li>Yosemite is the only national park to bid to host the winter Olympics</li>
             <li>This is one of few places in the U.S. where you can see a rainbow at night.</li>
@@ -89,6 +89,12 @@
         $('.specific').click(function(event){
             event.preventDefault();
             $('.yellow').addClass("bang");
+        })
+    })
+    $(document).ready(function(){
+        $('.specific').click(function(event){
+            event.preventDefault();
+            $('.bolded').addClass("bold");
         })
     })
     </script>
