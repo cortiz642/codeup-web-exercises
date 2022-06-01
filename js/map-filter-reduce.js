@@ -35,3 +35,11 @@ const users = [
         yearsOfExperience: 9
     }
 ];
+var results = users.filter(language => language.languages.includes("jaja"));
+    console.log(users)
+
+var names = (email) => email.length > 14;
+    console.log(email)
+
+    // console.log(obj);
+
