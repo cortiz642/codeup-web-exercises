@@ -513,9 +513,64 @@
 //
 // }
 
-function countOdds(arrNum){
-    for(let i = 1; i < arrNum.length; i++){
-        return arrNum[i] % 1;
-    }
-}
-countOdds(1,2,3,4,5,6)
+// function countOdds(arrNum){
+//     for(let i = 1; i < arrNum.length; i++){
+//         return arrNum[i] % 1;
+//     }
+// }
+// countOdds(1,2,3,4,5,6)
+// const isDivisibleBy3 = n => n % 3 === 0;
+//
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//
+// console.log(numbers.filter(isDivisibleBy3));
+// console.log(numbers);
+
+// <script>
+//     document.onreadystatechange = function() {
+//     if (document.readyState !== "complete") {
+//     document.querySelector("body").style.visibility = "hidden";
+//     document.querySelector("#loader").style.visibility = "visible";
+// } else {
+//     document.querySelector("#loader").style.display = "none";
+//     document.querySelector("body").style.visibility = "visible";
+// }
+// };
+//
+// </script>
+
+
+//////////////MORNING WARMUP 6/9/2022//////////////////////////////
+
+
+:sunny:Groovy Morning Warmup :sunny:
+//     You bought a few bunches of fruit over the weekend. Create a function that splits
+// a bunch into singular objects inside an array.
+
+//example input:
+//
+// [{name: "grapes", quantity: 2}]
+//
+// expected output:
+//
+//  [
+//   {name: "grapes", quantity: 1},
+//   {name: "grapes", quantity: 1}
+// ]
+// example input:
+// [
+//   {name: "currants", quantity: 1},
+//   {name: "grapes", quantity: 2},
+//   {name: "bananas", quantity: 2}
+// ]
+// expected output:
+// [
+//   {name: "currants", quantity: 1},
+//   {name: "grapes", quantity: 1},
+//   {name: "grapes", quantity: 1},
+//   {name: "bananas", quantity: 1},
+//   {name: "bananas", quantity: 1}
+// ]
+
+
+
